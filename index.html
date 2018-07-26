@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Set weekly goals and PPPs in Slack</title>
+    <meta property="og:title" content="Easiest way to set weekly goals in Slack" />
+    <meta name="description"
+          content="Set weekly goals, share progress and solve problems &amp;#9989; All within Slack. Avoid boring status meetings!">
+    <meta property="og:description" content="Set weekly goals, share progress and solve problems ✅ All within Slack. Avoid boring status meetings!" />
+    <meta property="og:image" content="https://oneteamhq.com/images/oneteam-og-image.png" />
+    <link rel="stylesheet"
+          href="./styles/style.css"/>
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://oneteamhq.com" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animate.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta name="google-site-verification" content="WtUW8bm82ETRn-1PK1kGexYPT7u2-sH6-ypaEls1XgI" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Start of Async Drift Code -->
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('ta6xpdzcevuv');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+          *
+          * Examples:
+          * - <a class="drift-open-chat">Questions? We're here to help!</a>
+          * - <button class="drift-open-chat">Chat now!</button>
+          *
+          * You can have any additional classes on those elements that you
+          * would ilke.
+          */
+        var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != 'loading') {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+          } else {
+            document.attachEvent('onreadystatechange', function() {
+              if (document.readyState != 'loading')
+                fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++)
+            fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on('ready', function(api) {
+            var handleClick = openSidebar.bind(this, api)
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener('click', handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+    
+  </head>
+  <body>
+      <section id="hero">
+          <div class="hero-cover">
+            <header>
+              <div class="nav">
+                <div class="logo_sub">
+                  <img src="images/wunderhub_logo_2.png"
+                    class="logo">
+                  <div class="sub">
+                    Hubspot apps for growing teams
+                  </div>
+                </div>
+                <ul class="menu">
+                  
+                  <li><a class="smooth-scroll" href="#get-started">How to Start</a></li>
+                  <li><a class="smooth-scroll" href="#features">Features</a></li>
+                  <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                  <li>Apps:&nbsp;
+                    <select>
+                      <option value="volvo">Property Mapper</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </header>
+            <div class="hero-main">
+              <div class="hero-center">
+                <div class="hero-text">
+                  <h1>Easily map & copy Hubspot CRM properties</span></h1>
+                    <!-- <h1>Share goals & progress with your Slack team <span class="emoji">👌</span></h1> -->
+                  <!-- <h1>Tired of status meetings and random tasks? <span class="emoji">&#x1F634;</span></h1> -->
+                  <!-- <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly <strong>goals</strong>, while openly sharing progress & problems. All in Slack. 
+                  </h2> -->
+                  <!-- <h2>So are we. That's why Oneteam helps you share weekly Goals, Progress and Problems within your Slack team.</h2> -->
+                  <!-- <h2>Oneteam makes it easy and fast for your team to share weekly <strong>Goals</strong>, <strong>Progress</strong> and <strong>Problems</strong>. -->
+                    <h2>Sync Hubspot properties with Wunderhub Property Mapper. Automatically copy property data between contacts, companies and deals.</h2>
+                  <div class="cta">
+                      <a class="signup-cta" href="/beta" onClick="gtag('event','click',{'event_category':'signup','event_label':'hero'});"><img src="images/Hubspot_Mark_Web.png"><strong>Sign up with Hubspot now</strong></a>
+                    <p>Free 14-day trial</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#why-goals" class="scroll-down smooth-scroll arrow-hero">
+              <img alt="arrow" data-hash="#why-goals" class="chevron scroll-down smooth-scroll arrow-hero" src="https://d12ur07klrawbl.cloudfront.net/assets/img/openvid/arrow-white-266d4fcfa171b6535e20dfdb5ff112de.svg">
+            </a>
+          </div>
+        </section>
+    <section id="get-started" class="benefits body-section blue">
+      <h2>Get started in 5 minutes</h2>
+      <hr>
+      <div class="three-steps flex">
+        
+        <div class="step">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-sign-in-alt"></i>
+            </div>
+          </div>
+
+          <h3>1. Log in with Hubspot</h3>
+          <p>Connect your Hubspot account. We'll sync your existing properties.</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+        <div class="step">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-cog"></i>
+            </div>
+          </div>
+
+          <h3>2. Setup mapping criteria</h3>
+          <p>Set up property synching and forget about it.</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+        <div class="step">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-smile"></i>
+            </div>
+          </div>
+
+          <h3>3. Enjoy new property data</h3>
+          <p>We'll apply mapping criteria immediately. You can forget about it.</p>
+        </div>
+
+      </div>
+      
+    </section>
+    <section id="features" class="body-section">
+      <h2>Features
+      </h2>
+      <h4>Never again manually update properties. Focus on selling.</h4>
+      <hr>
+      <div class="three-steps">
+
+          <div class="step" id="step-set-goals">
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                  <div class="circle number">
+                    1
+                  </div>
+                </div>
+                <div class="text-section">
+                  <h3>Sync contact properties with deal properties</h3>
+                  <p>Whenever you create a new Hubspot deal associated with an existing contact, we automatically copy chosen properties to deal
+                  properties. And vice versa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="./images/features/feature_property_mapping.png" class="feature-image property-mapping wow">
+            </div>
+          </div>
+          
+          <div class="step" id="step-publish-goals">
+            <div class="step-visual hidden-md wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="./images/features/feature_property_mapping.png" class="feature-image property-mapping wow">
+            </div>
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                  <div class="circle number">
+                    2
+                  </div>
+                </div>
+                <div class="text-section">
+                  <h3>Sync contact properties with company properties</h3>
+                  <p>Easily sync Hubspot contact properties with company properties and the other way around.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual hidden-lg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="./images/features/feature_historic_properties.png" class="feature-image publish-goals">
+            </div>
+          </div>
+
+          <div class="step" id="step-report">
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                  <div class="circle number">
+                    3
+                  </div>
+                </div>
+                <div class="text-section">
+                  <h3>Clean up existing properties</h3>
+                  <p>Be able to clean up existing Hubspot entities: copy contact properties to existing deals and companies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="./images/features/feature_historic_properties.png" class="feature-image historic-properties report">
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <section id="pricing" class="body-section">
+      <h2>Pricing</h2>
+      <h3>Stop wasting your precious time. Avoid manually updating properties between contacts, companies and deals.</h3>
+      <div class="pricing flex justify-content-center">
+        <div class="pricing-column green-top">
+          <div class="header">
+            <div class="who-for">
+              For individuals
+            </div>
+          </div>
+          <div class="body">
+            <div class="price-body">
+              <div class="price">
+                Free
+              </div>
+              <div class="price-explanation">
+                For companies with less than 200 deals.
+              </div>
+            </div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> <span>Copy historic properties values</span></li>
+              <li><i class="fas fa-check"></i> <span>Sync ongoing property changes</span></li>
+              <li><i class="fas fa-check"></i> <span>Free support</span></li>
+            </ul>
+ 
+          </div>
+          <div class="cta">
+            <a href="#" class="signup-cta"><img src="images/Hubspot_Mark_Web.png">Sign up with Hubspot</a>
+          </div>
+        </div>
+
+        <div class="pricing-column orange-top">
+          <div class="header">
+            <div class="who-for">
+              For teams
+            </div>
+          </div>
+          <div class="body">
+            <div class="price-body">
+              <div class="price">
+                $39
+              </div>
+              <div class="price-explanation">
+                / month
+              </div>
+            </div>
+            <ul class="features">
+              <li>
+                <i class="fas fa-check"></i>
+                <span>Copy historic properties values</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>Sync ongoing property changes</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>Free support & onboarding</span>
+              </li>
+            </ul>
+            <div class="cta">
+              <a href="#" class="signup-cta"><img src="images/Hubspot_Mark_Web.png">Sign up with Hubspot</a>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+    <footer>
+        <p>Made with ♥️ in Copenhagen by <a href="https://twitter.com/jmarovt" target="_blank">@jmarovt</a> & <a href="https://twitter.com/gbelcec" target="_blank">@gbelcec</a></p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119254906-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119254906-1');
+    </script>
+    <!-- END Google Analytics -->
+
+    <!-- START emoji-win-kill -->
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+
+      if (isWin7) {
+        var emojis = document.getElementsByClassName('emoji');
+        console.log(emojis.length);
+        for (var i = 0; i < emojis.length; ++i) {
+          var item = emojis[i];
+          
+          item.style.cssText = "display:none";
+        }
+      }  
+    </script>
+    <!-- END emoji-win-kill -->
+
+    <!-- START smooth-scroll -->
+    <script type="text/javascript">
+      var targetOffset, currentPosition,
+      body = document.body,
+      buttons = document.getElementsByClassName('smooth-scroll'),
+      animateTime = 900;
+      
+      function getPageScroll() {
+        var yScroll;
+
+        if (window.pageYOffset) {
+          yScroll = window.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+          yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+          yScroll = document.body.scrollTop;
+        }
+        return yScroll;
+      }
+      
+      for(var i = 0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', function (event) {
+
+        if (event.target.hash){
+          targetOffset = document.getElementById(event.target.hash.substr(1)).offsetTop;
+        }
+        else if (event.target.dataset.hash) {
+          targetOffset = document.getElementById(event.target.dataset.hash.substr(1)).offsetTop;
+        }
+        
+        currentPosition = getPageScroll();
+
+        body.classList.add('in-transition');
+        body.style.WebkitTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.MozTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.transform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+
+        window.setTimeout(function () {
+          body.classList.remove('in-transition');
+          body.style.cssText = "";
+          window.scrollTo(0, targetOffset);
+        }, animateTime);
+
+        event.preventDefault();
+
+        }, false);
+      }
+      
+    </script>
+    <!-- END smooth-scroll -->
+
+    <!-- START wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        offset: "250"
+      });
+      wow.init();
+    </script>
+    <!-- END wow.js -->
+
+    <!-- START collapsible -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+  
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <!-- END collapsible -->
+
+  </body>
+</html>
