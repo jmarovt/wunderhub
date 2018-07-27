@@ -57,7 +57,7 @@ hr {
   width: 3.05rem;
   border: 0;
   border-top: 3px solid rgba(88, 107, 164, 0.3);
-  margin: 1.95rem auto 3.8rem auto;
+  margin: 1.95rem auto 3.05rem auto;
 }
 .body-section {
   padding: 3.8rem 0 3.8rem 0;
@@ -392,6 +392,20 @@ hr {
   text-decoration: none;
 }
 .benefits .mini-benefits .benefit p.avatar a:hover {
+  text-decoration: underline;
+}
+#why p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.56rem;
+}
+#why p + p {
+  margin-top: 1rem;
+}
+#why p a {
+  text-decoration: none;
+}
+#why p a:hover {
   text-decoration: underline;
 }
 #get-started .three-steps {
