@@ -408,6 +408,9 @@ hr {
 #why p a:hover {
   text-decoration: underline;
 }
+#why .monkey-business {
+  width: 350px;
+}
 #get-started .three-steps {
   width: 85%;
   max-width: 1200px;
@@ -603,9 +606,6 @@ hr {
   font-weight: 600;
   margin-bottom: -18px;
 }
-#pricing .pricing .pricing-column + .pricing-column {
-  margin-left: 1rem;
-}
 .content {
   min-height: calc(100vh - 55px);
 }
@@ -683,6 +683,12 @@ code {
 }
 .text-left {
   text-align: left;
+}
+.margin-separator-xl {
+  margin-left: 1.95rem;
+}
+.margin-separator-xxxl {
+  margin-left: 3.8rem;
 }
 #blog-header .nav {
   background-color: #083D77;
@@ -889,5 +895,19 @@ code {
   }
   .faq-item {
     width: 100%;
+  }
+  .flex {
+    display: block;
+  }
+  .margin-separator-xxxl,
+  .margin-separator-xl {
+    margin-left: 0;
+    margin-top: 1.95rem;
+  }
+  #get-started .three-steps .step {
+    width: 100%;
+  }
+  .pricing-column {
+    width: 100% !important;
   }
 }

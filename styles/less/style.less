@@ -566,6 +566,10 @@ hr {
       }
     }
   }
+
+  .monkey-business {
+    width: 350px;
+  }
 }
 
 #get-started {
@@ -816,10 +820,6 @@ hr {
         font-weight: @font-weight-bold;
         margin-bottom: -18px;
       }
-
-      & + .pricing-column {
-        margin-left: @font-size-base;
-      }
     }    
   }
 }
@@ -925,6 +925,14 @@ code {
 
 .text-left {
   text-align: left;
+}
+
+.margin-separator-xl {
+  margin-left: @font-size-xl;
+}
+
+.margin-separator-xxxl {
+  margin-left: @font-size-xxxl;
 }
 
 // END Helper classes
@@ -1202,6 +1210,27 @@ code {
   
   .faq-item {
     width: 100%;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .margin-separator-xxxl, .margin-separator-xl {
+    margin-left: 0;
+    margin-top: @font-size-xl;
+  }
+
+  #get-started {
+    .three-steps {
+      .step {
+        width: 100%;
+      }
+    }
+  }
+
+  .pricing-column {
+    width: 100% !important;
   }
 }
 
