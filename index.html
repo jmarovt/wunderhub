@@ -100,254 +100,229 @@
     
   </head>
   <body>
-      <section id="hero">
-          <div class="hero-cover">
-            <header>
-              <div class="nav">
-                <div class="logo_sub">
-                  <img src="images/wunderhub_logo_2.png"
-                    class="logo">
-                  <div class="sub">
-                    Hubspot apps for growing teams
-                  </div>
-                </div>
-                <ul class="menu">
-                  <li>
-                    <a class="smooth-scroll" href="#why">The Problem</a>
-                  </li>
-                  <li><a class="smooth-scroll" href="#get-started">How to Start</a></li>
-                  <li><a class="smooth-scroll" href="#features">Features</a></li>
-                  <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
-                  <li>Apps:&nbsp;
-                    <select>
-                      <option value="volvo">Property Mapper</option>
-                    </select>
-                  </li>
-                </ul>
-              </div>
-            </header>
-            <div class="hero-main">
-              <div class="hero-center">
-                <div class="hero-text">
-                  <h1>First automatic sync for Hubspot properties</span></h1>
-                    <!-- <h1>Share goals & progress with your Slack team <span class="emoji">👌</span></h1> -->
-                  <!-- <h1>Tired of status meetings and random tasks? <span class="emoji">&#x1F634;</span></h1> -->
-                  <!-- <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly <strong>goals</strong>, while openly sharing progress & problems. All in Slack. 
-                  </h2> -->
-                  <!-- <h2>So are we. That's why Oneteam helps you share weekly Goals, Progress and Problems within your Slack team.</h2> -->
-                  <!-- <h2>Oneteam makes it easy and fast for your team to share weekly <strong>Goals</strong>, <strong>Progress</strong> and <strong>Problems</strong>. -->
-                    <h2>Hate manually copying Hubspot property data? Now you can automatically copy and update properties between contacts, companies and deals.</h2>
-                  <div class="cta">
-                      <a class="signup-cta" href="#" onClick="gtag('event','click',{'event_category':'signup','event_label':'hero'});"><img src="images/Hubspot_Mark_Web.png"><strong>Sign up with Hubspot now</strong></a>
-                    <p>Free 14-day trial. Set it up in 5 minutes.</p>
-                  </div>
-                </div>
-              </div>
+    <section class="hero">
+      <div class="hero__cover">
+        <div class="nav">
+          <div class="nav__logo-section">
+            <img src="images/wunderhub_logo_2.png"
+              class="nav__logo-image">
+            <div class="nav__logo-subtext">
+              Hubspot apps for growing teams
             </div>
-            <a href="#why" class="scroll-down smooth-scroll arrow-hero">
-              <img alt="arrow" data-hash="#why" class="chevron scroll-down smooth-scroll arrow-hero" src="https://d12ur07klrawbl.cloudfront.net/assets/img/openvid/arrow-white-266d4fcfa171b6535e20dfdb5ff112de.svg">
-            </a>
           </div>
-        </section>
-    <section id="why" class="benefits body-section blue">
-      <h2>No more monkey business</h2>
-      <hr>
-      <div class="flex justify-content-center">
-        <div>
-        <p>Manually updating properties on different records in Hubspot?<br><strong>That's monkey business... But, we were monkeys too.</strong></p>
-        
-        <p> We wanted to filter deals by properties on contact records. <br>But we
-          had to manually copy properties from contacts to deals 😟</p>
-              
-        <p>Then we talked to other Hubspot users - same problem.<br><strong><a href="https://community.hubspot.com/t5/HubSpot-Ideas/Sync-property-values-between-Contact-Company-and-Deal-Records/idi-p/22016"
-          target="_blank">In fact, it’s the top 3 most requested Hubspot feature</a>.</strong></p>
-        
-        <p>That’s why we built Property Mapper.</p>
-        
-        <p>For us and for others that enjoy a clean Hubspot CRM.<br> And for sales people, that, well, want to sell 😉</p>
+          <ul class="nav__menu">
+            <li class="nav__menu-item"><a class="nav__menu-item-link smooth-scroll" href="#why">The Problem</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-item-link smooth-scroll" href="#get-started">How to Start</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-item-link smooth-scroll" href="#features">Features</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-item-link smooth-scroll" href="#pricing">Pricing</a></li>
+            <li class="nav__menu-item">Apps:&nbsp;
+              <select class="nav__menu-item-select">
+                <option value="volvo">Property Mapper</option>
+              </select>
+            </li>
+          </ul>
         </div>
+        <div class="hero__main">
+          <h1>First automatic sync for Hubspot properties</h1>
+          <h2 class="hero__subtitle">Hate manually copying Hubspot property data? Now you can automatically copy and update properties between contacts, companies and deals.</h2>
+          <div class="cta">
+            <a class="cta__button" href="#" onClick="gtag('event','click',{'event_category':'signup','event_label':'hero'});"><img src="images/Hubspot_Mark_Web.png" class="cta__image">Sign up with Hubspot now</a>
+            <p class="cta__subtext">Free 14-day trial. Set it up in 5 minutes.</p>
+          </div>
+        </div>
+        <a href="#why" class="hero__arrow-down-container smooth-scroll">
+          <img alt="arrow" data-hash="#why" class="hero__arrow-down smooth-scroll" src="https://d12ur07klrawbl.cloudfront.net/assets/img/openvid/arrow-white-266d4fcfa171b6535e20dfdb5ff112de.svg">
+        </a>
+      </div>
+    </section>
+    <section id="why" class="body-section body-section--blue">
+      <h2 class="body-section__title">No more monkey business</h2>
+      <hr>
+      <div class="body-section__two-columns">
+        <div class="body-section__column-text">
+          <p>Manually updating properties on different records in Hubspot?<br><strong>That's monkey business... But, we were monkeys too.</strong></p>
+          
+          <p> We wanted to filter deals by properties on contact records. <br>But we
+            had to manually copy properties from contacts to deals 😟</p>
+                
+          <p>Then we talked to other Hubspot users - same problem.<br><strong><a href="https://community.hubspot.com/t5/HubSpot-Ideas/Sync-property-values-between-Contact-Company-and-Deal-Records/idi-p/22016"
+            target="_blank">In fact, it’s the top 3 most requested Hubspot feature</a>.</strong></p>
+        
+          <p>That’s why we built Property Mapper.<br>
+          For all the sales people that want to focus on sales.</p>
+                </div>
         <div>
-          <img src="images/monkey_business.gif" class="monkey-business margin-separator-xxxl">
+          <img src="images/monkey_business.gif" class="body-section__column-image">
         </div>
       </div>
     </section>
     <section id="get-started" class="benefits body-section">
-      <h2>Get started in 5 minutes</h2>
+      <h2 class="body-section__title">Get started in 5 minutes</h2>
       <hr>
-      <div class="three-steps flex">
+      <div class="three-steps three-steps--horizontal">
         
-        <div class="step">
-          <div class="icon-section">
-            <div class="circle">
+        <div class="three-steps__item">
+          <div class="icon-section icon-section--center">
+            <div class="icon-section__circle icon-section__circle--center-big">
               <i class="fas fa-sign-in-alt"></i>
             </div>
           </div>
-
           <h3>1. Log in with Hubspot</h3>
-          <p>Connect your Hubspot account. We'll sync your existing properties.</p>
+          <p class="three-steps__item-text">Connect your Hubspot account. We'll sync your existing properties.</p>
         </div>
-        <i class="fas fa-angle-right hidden-md"></i>
-        <div class="step">
-          <div class="icon-section">
-            <div class="circle">
+
+        <i class="fas fa-angle-right three-steps__arrow-right hidden-md"></i>
+
+        <div class="three-steps__item">
+          <div class="icon-section icon-section--center">
+            <div class="icon-section__circle icon-section__circle--center-big">
               <i class="fas fa-cog"></i>
             </div>
           </div>
-
           <h3>2. Set up mapping criteria</h3>
-          <p>Set up property synching and forget about it.</p>
+          <p class="three-steps__item-text">Set up property synching and forget about it.</p>
         </div>
-        <i class="fas fa-angle-right hidden-md"></i>
-        <div class="step">
-          <div class="icon-section">
-            <div class="circle">
+
+        <i class="fas fa-angle-right three-steps__arrow-right hidden-md"></i>
+
+        <div class="three-steps__item">
+          <div class="icon-section icon-section--center">
+            <div class="icon-section__circle icon-section__circle--center-big">
               <i class="fas fa-smile"></i>
             </div>
           </div>
-
           <h3>3. Enjoy new property data</h3>
-          <p>We'll apply mapping criteria immediately. You can forget about it.</p>
+          <p class="three-steps__item-text">We'll apply mapping criteria immediately. You can forget about it.</p>
+        </div>
+
+      </div>   
+    </section>
+    <section id="features" class="body-section body-section--blue">
+      <h2 class="body-section__title">Features</h2>
+      <h4 class="body-section__subtitle">Never again manually update properties. Focus on selling.</h4>
+      <hr>
+      <div class="features">
+
+        <div class="features__item">
+          <div class="features__icon-and-text">
+            <div class="icon-section">
+              <div class="icon-section__circle">
+                1
+              </div>
+            </div>
+            <div class="features__text">
+              <h3>Sync contact properties with deal properties</h3>
+              <p>Whenever you create a new Hubspot deal associated with an existing contact, we automatically copy chosen properties to deal
+              properties. And vice versa.</p>
+            </div>
+          </div>   
+          <div class="features__image-container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="./images/features/feature_property_mapping.png" class="features__image wow">
+          </div>
+        </div>
+          
+        <div class="features__item">
+          <div class="features__image-container hidden-md wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="./images/features/feature_property_mapping.png" class="features__image wow">
+          </div>
+          <div class="features__icon-and-text">
+            <div class="icon-section">
+              <div class="icon-section__circle">
+                2
+              </div>
+            </div>
+            <div class="features__text">
+              <h3 class="three-steps__item-title">Sync contact properties with company properties</h3>
+              <p>Easily sync Hubspot contact properties with company properties and the other way around.</p>
+            </div>
+          </div>
+          <div class="features__image-container hidden-lg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="./images/features/feature_property_mapping.png" class="features__image">
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="features__icon-and-text">
+            <div class="icon-section">
+              <div class="icon-section__circle">
+                3
+              </div>
+            </div>
+            <div class="features__text">
+              <h3 class="three-steps__item-title">Clean up existing properties</h3>
+              <p>Be able to clean up existing Hubspot entities: copy contact properties to existing deals and companies.</p>
+            </div>
+
+          </div>
+          <div class="features__image-container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="./images/features/feature_historic_properties.png" class="features__image">
+          </div>
         </div>
 
       </div>
-      
     </section>
-    <section id="features" class="body-section blue">
-      <h2>Features
-      </h2>
-      <h4>Never again manually update properties. Focus on selling.</h4>
-      <hr>
-      <div class="three-steps">
-
-          <div class="step" id="step-set-goals">
-            <div class="step-text">
-              <div class="feature">
-                <div class="icon-section">
-                  <div class="circle number">
-                    1
-                  </div>
-                </div>
-                <div class="text-section">
-                  <h3>Sync contact properties with deal properties</h3>
-                  <p>Whenever you create a new Hubspot deal associated with an existing contact, we automatically copy chosen properties to deal
-                  properties. And vice versa.</p>
-                </div>
-              </div>
-            </div>
-            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <img src="./images/features/feature_property_mapping.png" class="feature-image property-mapping wow">
-            </div>
+    <section id="pricing" class="body-section pricing">
+      <h2 class="body-section__title">Pricing</h2>
+      <h4 class="body-section__subtitle">Stop wasting your precious time. Avoid manually updating properties between contacts, companies and deals.</h4>
+      <div class="pricing__container justify-content-center">
+        <div class="pricing__column pricing__column--green-top">
+          <div class="pricing__target">
+            For individuals
           </div>
-          
-          <div class="step" id="step-publish-goals">
-            <div class="step-visual hidden-md wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <img src="./images/features/feature_property_mapping.png" class="feature-image property-mapping wow">
-            </div>
-            <div class="step-text">
-              <div class="feature">
-                <div class="icon-section">
-                  <div class="circle number">
-                    2
-                  </div>
-                </div>
-                <div class="text-section">
-                  <h3>Sync contact properties with company properties</h3>
-                  <p>Easily sync Hubspot contact properties with company properties and the other way around.</p>
-                </div>
-              </div>
-            </div>
-            <div class="step-visual hidden-lg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <img src="./images/features/feature_historic_properties.png" class="feature-image publish-goals">
-            </div>
-          </div>
-
-          <div class="step" id="step-report">
-            <div class="step-text">
-              <div class="feature">
-                <div class="icon-section">
-                  <div class="circle number">
-                    3
-                  </div>
-                </div>
-                <div class="text-section">
-                  <h3>Clean up existing properties</h3>
-                  <p>Be able to clean up existing Hubspot entities: copy contact properties to existing deals and companies.</p>
-                </div>
-              </div>
-            </div>
-            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <img src="./images/features/feature_historic_properties.png" class="feature-image historic-properties report">
-            </div>
-          </div>
-
-        </div>
-    </section>
-    <section id="pricing" class="body-section">
-      <h2>Pricing</h2>
-      <h3>Stop wasting your precious time. Avoid manually updating properties between contacts, companies and deals.</h3>
-      <div class="pricing flex justify-content-center">
-        <div class="pricing-column green-top">
-          <div class="header">
-            <div class="who-for">
-              For individuals
-            </div>
-          </div>
-          <div class="body">
-            <div class="price-body">
-              <div class="price">
+          <div class="pricing__body">
+            <div class="pricing__price-section">
+              <div class="pricing__price">
                 Free
               </div>
-              <div class="price-explanation">
+              <div class="pricing__subtext">
                 For companies with less than 200 deals.
               </div>
             </div>
-            <ul class="features">
-              <li><i class="fas fa-check"></i> <span>Copy historic property values</span></li>
-              <li><i class="fas fa-check"></i> <span>Sync ongoing property changes</span></li>
-              <li><i class="fas fa-check"></i> <span>Free support</span></li>
+            <ul class="pricing__features">
+              <li class="pricing__features-item"><i class="fas fa-check pricing__checkmark"></i> <span>Copy historic property values</span></li>
+              <li class="pricing__features-item"><i class="fas fa-check pricing__checkmark"></i> <span>Sync ongoing property changes</span></li>
+              <li class="pricing__features-item"><i class="fas fa-check pricing__checkmark"></i> <span>Free support</span></li>
             </ul>
           
           </div>
-          <div class="cta">
-            <a href="#" class="signup-cta">
-              <img src="images/Hubspot_Mark_Web.png">Sign up with Hubspot</a>
+          <div class="cta cta--pushed-down">
+            <a href="#" class="cta__button">
+              <img src="images/Hubspot_Mark_Web.png" class="cta__image">Sign up with Hubspot</a>
           </div>
         </div>
 
-        <div class="pricing-column orange-top margin-separator-xl">
-          <div class="header">
-            <div class="who-for">
-              For teams
-            </div>
+        <div class="pricing__column pricing__column--orange-top">
+          <div class="pricing__target">
+            For teams
           </div>
-          <div class="body">
-            <div class="price-body">
-              <div class="price">
+          <div class="pricing__body">
+            <div class="pricing__price-section">
+              <div class="pricing__price">
                 $39
               </div>
-              <div class="price-explanation">
+              <div class="pricing__subtext">
                 / month
               </div>
             </div>
-            <ul class="features">
-              <li>
-                <i class="fas fa-check"></i>
+            <ul class="pricing__features">
+              <li class="pricing__features-item">
+                <i class="fas fa-check pricing__checkmark"></i>
                 <span>Copy historic property values</span>
               </li>
-              <li>
-                <i class="fas fa-check"></i>
+              <li class="pricing__features-item">
+                <i class="fas fa-check pricing__checkmark"></i>
                 <span>Sync ongoing property changes</span>
               </li>
-              <li>
-                <i class="fas fa-check"></i>
+              <li class="pricing__features-item">
+                <i class="fas fa-check pricing__checkmark"></i>
                 <span>Free support & onboarding</span>
               </li>
             </ul>
            
           </div>
-          <div class="cta">
-            <a href="#" class="signup-cta">
-              <img src="images/Hubspot_Mark_Web.png">Sign up with Hubspot</a>
+          <div class="cta cta--pushed-down">
+            <a href="#" class="cta__button">
+              <img src="images/Hubspot_Mark_Web.png" class="cta__image">Sign up with Hubspot</a>
           </div>
         </div>
 
