@@ -291,6 +291,10 @@ hr {
   font-size: 1.56rem;
   color: #083D77;
 }
+.three-steps__illustration {
+  height: 120px;
+  margin-bottom: 1.95rem;
+}
 .three-steps--horizontal {
   display: flex;
   align-items: center;
