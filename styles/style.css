@@ -73,7 +73,7 @@ hr {
   text-decoration: underline;
 }
 .body-section__column-image {
-  width: 350px;
+  width: 450px;
   margin-left: 3.8rem;
 }
 .body-section + .body-section {
@@ -330,7 +330,7 @@ hr {
   text-align: center;
 }
 .features__image {
-  width: 350px;
+  width: 450px;
   padding: 1rem;
   margin: 0 auto;
   background-color: white;
