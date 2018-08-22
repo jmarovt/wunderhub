@@ -324,6 +324,9 @@ hr {
 .features__text {
   padding-top: 2px;
 }
+.features__entity-heading {
+  text-transform: uppercase;
+}
 .features__image-container {
   flex-basis: 0;
   flex-grow: 1;
