@@ -18,7 +18,8 @@
 @padding-mid: 3%;
 @padding-main: 4%;
 @padding-section: 5%;
-@padding-main-mobile: 8%;
+@padding-sm-mobile: 8%;
+@padding-xl-mobile: 14%;
 
 // END Main dimensions
 
@@ -130,10 +131,18 @@ hr {
   &__two-columns {
     display: flex;
     justify-content: center;
+
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   &__column-text {
     text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     a {
       text-decoration: none;
@@ -141,6 +150,10 @@ hr {
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    &--block {
+      display: block;
     }
   }
 
@@ -266,6 +279,7 @@ hr {
 
   &__menu-item-select {
     height: 26px;
+    width: 120px;
     
     font-size: @font-size-sm;
 
@@ -859,7 +873,7 @@ code {
     background-position-x: 50%;
 
     &__cover {
-      padding: @padding-main-mobile !important;
+      padding: @padding-xl-mobile !important;
     }
 
     &__arrow_down {
@@ -886,15 +900,17 @@ code {
   }
 
   .body-section {
-    padding: @padding-main-mobile;
+    padding: @padding-xl-mobile @padding-sm-mobile;
 
     &__two-columns {
+      width: 100%;
       display: block;
     }
 
-    &__column-image {
-      max-width: 100%;
+    &__column-text {
+      width: 100%;
       margin: 0;
+      display: block;
     }
   }
 
@@ -914,7 +930,7 @@ code {
 
     &__item {
       width: 100%;
-      margin-top: @font-size-xl;
+      margin-top: @font-size-xxxl;
     }
   }
 
@@ -935,6 +951,7 @@ code {
 
     &__icon-and-text {
       max-width: 100%;
+      margin-top: @font-size-xxxl;
     }
 
     &__image {

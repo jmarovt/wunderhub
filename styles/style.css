@@ -62,15 +62,25 @@ hr {
 .body-section__two-columns {
   display: flex;
   justify-content: center;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .body-section__column-text {
   text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body-section__column-text a {
   text-decoration: none;
 }
 .body-section__column-text a:hover {
   text-decoration: underline;
+}
+.body-section__column-text--block {
+  display: block;
 }
 .body-section__column-image {
   width: 350px;
@@ -162,6 +172,7 @@ hr {
 }
 .nav__menu-item-select {
   height: 26px;
+  width: 120px;
   font-size: 0.75rem;
   opacity: 0.8;
   border: 0px;
@@ -605,7 +616,7 @@ code {
     background-position-x: 50%;
   }
   .hero__cover {
-    padding: 8% !important;
+    padding: 14% !important;
   }
   .hero__arrow_down {
     margin-top: 1.95rem;
@@ -623,14 +634,16 @@ code {
     width: 100%;
   }
   .body-section {
-    padding: 8%;
+    padding: 14% 8%;
   }
   .body-section__two-columns {
+    width: 100%;
     display: block;
   }
-  .body-section__column-image {
-    max-width: 100%;
+  .body-section__column-text {
+    width: 100%;
     margin: 0;
+    display: block;
   }
   .nav__logo-section {
     margin: 0 auto;
@@ -644,7 +657,7 @@ code {
   }
   .three-steps__item {
     width: 100%;
-    margin-top: 1.95rem;
+    margin-top: 3.8rem;
   }
   .icon-section__circle--center-big {
     margin-bottom: 0.75rem;
@@ -657,6 +670,7 @@ code {
   }
   .features__icon-and-text {
     max-width: 100%;
+    margin-top: 3.8rem;
   }
   .features__image {
     width: 90%;
