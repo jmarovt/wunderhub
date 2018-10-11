@@ -218,6 +218,7 @@ hr {
   display: block;
   width: 26px;
   margin-left: -13px;
+  color: white;
   -webkit-animation-name: bob, bob;
   animation-name: bob, bob;
   -webkit-animation-duration: .375s, 1.425s;
